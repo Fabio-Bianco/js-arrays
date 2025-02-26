@@ -1,3 +1,4 @@
+
 const teachers = [
   'Nathan',
   'Ed',
@@ -10,6 +11,10 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
+
+for (let i=teachers.length -1; i>0; i--){
+  console.log (teachers [i]);
+}
 const reversedTeachers = null;
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
@@ -17,6 +22,13 @@ const reversedTeachers = null;
 const longNames = null;
 
 // 3. Rimuovi 'Ed' dall'array teachers
+const index = teachers.indexOf ('Ed'); //var che indica la posizione della stringa 'Ed'
+
+teachers.splice(index, 1);
+
+console.log (teachers)
+
+
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent

@@ -37,7 +37,8 @@ for (let i=teachers.length -1; i>0; i--){
 const longNames = [];
 
 for (i=0; i < teachers.length; i++){
-  if (teachers[i].length >=5){
+  const currentTeacher = teachers[i];
+  if (currentTeacher.length >=5){
     longNames.push(teachers[i]);
   }
 }

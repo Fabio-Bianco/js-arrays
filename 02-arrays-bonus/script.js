@@ -12,20 +12,19 @@ const teachers = [
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
 
-let reversedTeachers;
+// let reversedTeachers;
 
-for (let i=teachers.length -1; i>0; i--){
+// for (let i=teachers.length -1; i>0; i--){
 
-    const currentTeacher=(teachers [i]);
+//     const currentTeacher=(teachers [i]);
 
-  if (reversedTeachers === 0) {
-    reversedTeachers = [];
-  }
-   reversedTeachers.push (currentTeacher);
-  }
+//   if (reversedTeachers === 0) {
+//   }
+//    reversedTeachers.push (currentTeacher);
+//   }
  
-  console.log (teachers);
-  console.log (reversedTeachers);
+//   console.log (teachers);
+//   console.log (reversedTeachers);
 
 
 // teachers.reverse ()
@@ -42,30 +41,30 @@ for (i=0; i < teachers.length; i++){
     longNames.push(teachers[i]);
   }
 }
-
 console.log(longNames);
 
 
 // 3. Rimuovi 'Ed' dall'array teachers
-const index = teachers.indexOf ('Ed'); //var che indica la posizione della stringa 'Ed'
-
-teachers.splice(index, 1);
-
-console.log (teachers)
+const deletedTeacher = teachers.indexOf ('Ed');//var che indica la posizione della stringa 'Ed';
+if (deletedTeacher >=0) teachers.splice(1, 1); //elimino graffe perchè l'operazione post è singola;
+console.log (teachers);
 
 
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
+
+
 if (teachers.indexOf('Fabio') !== -1) {
   console.log('Fabio è presente nell\'array.');
 } else {
   console.log('Fabio non è presente nell\'array.');
 }
 const isFabioPresent = (teachers.indexOf('Fabio') !== -1);
+console.log (teachers.indexOf('Fabio') !== -1)
+
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 teachers.join (',')
 const teachersString = teachers.join(', ');
-
 console.log(teachersString);

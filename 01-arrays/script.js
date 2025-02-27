@@ -14,7 +14,7 @@ const fourthTeacher = teachers [3];
 console.log ( fourthTeacher);
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers[4]= ('Patrick');
+teachers[4]= ('Patrick'); // identifichi l'indice della voce da sostituire =
 console.log (teachers);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
@@ -41,12 +41,12 @@ console.log  (teachers.length); // add for check
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-console.log (teachers);
 teachers.indexOf ('Lewis');
-const lewisIndex = [5];
+const lewisIndex = teachers.indexOf ('Lewis');
+console.log (teachers);
 console.log (lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = teachers.length;
+const isTeachersEmpty = teachers.length === 0; // (add operatore di confronto post correzione)
 console.log  (isTeachersEmpty);

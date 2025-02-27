@@ -15,11 +15,21 @@ const teachers = [
 for (let i=teachers.length -1; i>0; i--){
   console.log (teachers [i]);
 }
-const reversedTeachers = (teachers [i]);
+const reversedTeachers = null;
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
-const longNames = null;
+
+const longNames = [];
+
+for (i=0; i < teachers.length; i++){
+  if (teachers[i].length >=5){
+    longNames.push(teachers[i]);
+  }
+}
+
+console.log(longNames);
+
 
 // 3. Rimuovi 'Ed' dall'array teachers
 const index = teachers.indexOf ('Ed'); //var che indica la posizione della stringa 'Ed'
@@ -40,4 +50,7 @@ if (teachers.indexOf('Fabio') !== -1) {
 const isFabioPresent = (teachers.indexOf('Fabio') !== -1);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+teachers.join (',')
+const teachersString = teachers.join(', ');
+
+console.log(teachersString);
